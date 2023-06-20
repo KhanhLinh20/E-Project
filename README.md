@@ -1,13 +1,13 @@
-Project title: Nobel Prize
-Group: Group 1
+<h1> Project title: Nobel Prize
+<h3> Group: Group 1
 
 Author:
-Dinh Hoang Khanh Linh - Student23022004
-Nguyen Quoc Hoang - Student1316202
-Tran Bao Huy - Student1457510
+<br> Dinh Hoang Khanh Linh - Student23022004
+<br> Nguyen Quoc Hoang - Student1316202
+<br> Tran Bao Huy - Student1457510
 
 
-eProject documentation at https://github.com/KhanhLinh20/e-project
+eProject documentation at https://github.com/KhanhLinh20/E-Project/tree/develop/Document
 
 
 eProject published at https://khanhlinh20.github.io/E-Project/
