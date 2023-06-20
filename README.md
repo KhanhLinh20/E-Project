@@ -1,5 +1,5 @@
-<h1> Project title: Nobel Prize
-<h3> Group: Group 1
+ Project title: Nobel Prize
+ Group: Group 1
 
 Author:
 <br> Dinh Hoang Khanh Linh - Student23022004
