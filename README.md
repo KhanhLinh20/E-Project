@@ -1,5 +1,7 @@
  Project title: Nobel Prize
 <br> Group: Group 1
+<br> Batch no.: T1.2302.E1
+<br> CENTER NAME: ACE-HCMC-2-FPT
 
 Author:
 <br> Dinh Hoang Khanh Linh - Student23022004
@@ -13,6 +15,6 @@ eProject documentation at https://github.com/KhanhLinh20/E-Project/tree/develop/
 eProject published at https://khanhlinh20.github.io/E-Project/
 
 ============================
+This is a non-profit website project that uses images and information sourced from the internet.
 
-
-Thank you for spending your time to look at our work.
+<br> Thank you for spending your time to look at our work.
