@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="icon" href="https://www.nobelprize.org/uploads/2018/08/Nobel-favicon-50x50.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./font/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Peace Winner</title>
+</head>
+
+<style>
+    .tile {
+        margin: 3em;
+        text-align: center;
+    }
+
+    .tile span {
+        font-size: 2.5rem;
+        color: #ac8314;
+    }
+
+    #container {
+        width: 78vw;
+        height: auto;
+        margin-left: 11vw;
+        margin-right: 11vw;
+    }
+
+    #container {
+        padding-bottom: 1rem;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .figcaption {
+        margin-bottom: 1.2vh;
+        font-size: 1.6rem;
+    }
+
+    .figcaption-attribution {
+        color: rgb(104, 94, 94);
+        font-size: 1.6rem;
+    }
+
+    .figcaption p {
+        display: inline;
+    }
+
+    .nomination-intro {
+        width: 78vw;
+        height: auto;
+        margin-left: 11vw;
+        margin-right: 11vw;
+    }
+
+    .namination-content {
+        border-top: rgb(232, 224, 224) solid thin;
+    }
+
+    .quick-faclist {
+        border-top: rgb(232, 224, 224) solid thin;
+    }
+
+    .quick-faclist a {
+        font-size: 0.5cm;
+        counter-reset: rgb(70, 191, 238);
+
+    }
+
+    ul.nav-faclist {
+        margin-bottom: 2rem;
+        padding-left: 1.2rem;
+    }
+
+    .nav-faclist li {
+        font-size: 1.6rem;
+        font-weight: normal;
+        margin-bottom: 1.2rem;
+        padding-right: 1rem;
+
+    }
+
+    .quick-faclist a {
+        text-decoration: none;
+    }
+
+    .namination-content {
+        float: left;
+        width: 67%;
+        height: auto;
+    }
+
+    .quick-faclist {
+        float: right;
+        width: 30%;
+        height: auto;
+    }
+
+    .clear-nomination {
+        clear: both;
+    }
+
+    .sub-section-header {
+        margin: 1.5em 0em;
+    }
+
+    .sub-section-header h4 {
+        font-size: 2rem;
+        font-weight: normal;
+    }
+
+    .sub-section-content p {
+        margin-bottom: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    .sub-section-content p em {
+        font-style: italic;
+        font-size: 1.6rem;
+        font-weight: 200;
+    }
+
+    .feature-content {
+        padding: 4vw 0;
+        background-color: #faf8f4;
+    }
+
+    .border-centent {
+        width: 78vw;
+        height: auto;
+        margin-left: 11vw;
+        margin-right: 11vw;
+    }
+
+    .border-top {
+        padding: 5vh 0vh;
+    }
+
+
+    .border-top h3 {
+        text-transform: capitalize;
+        font-weight: normal;
+        color: #ac8314;
+    }
+
+
+    h3.section-header-h3 {
+        font-size: 2.4rem;
+    }
+
+    .section-article-grid {
+        width: 78vw;
+        height: auto;
+        margin-left: 11vw;
+        margin-right: 11vw;
+        border-top: rgb(232, 224, 224) solid thin;
+    }
+
+    .section-header-top {
+        padding: 1.6rem 0rem;
+    }
+
+    .section-header-top h3 {
+        font-size: 2.4rem;
+        font-weight: normal;
+        color: #ac8314;
+    }
+
+    .section-wrapper-content-human {
+        float: left;
+        width: 48%;
+        height: auto;
+        text-align: left;
+        border-top: rgb(232, 224, 224) solid thin;
+    }
+
+    .clear-section-content-human {
+        clear: both;
+    }
+
+    .section-wrapper-img {
+        float: right;
+        width: 49%;
+        height: auto;
+    }
+
+    .headline-h1 {
+        margin: 3vh 0vh;
+    }
+
+    .headline-h1 a {
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: normal;
+        color: #ac9e56;
+    }
+
+    .content-human-h2 {
+        padding: 3vh 0vh;
+    }
+
+    .content-human-h2 p {
+        font-size: 1.6rem;
+    }
+
+    .relate {
+        padding-bottom: 1vh;
+    }
+
+    .relate h3 {
+        font-size: 1.5rem;
+        font-weight: normal;
+    }
+
+    ul.human-evolution {
+        list-style: none;
+        padding: 3vh 0vh;
+    }
+
+    ul.human-evolution li {
+        padding: 0.5vh 0vh;
+    }
+
+    ul.human-evolution li a {
+        color: rgb(6, 127, 174);
+        text-decoration: none;
+        font-size: 1.6rem;
+    }
+
+    .article-one {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 60vh;
+    }
+
+    .feature-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-title-article-24 {
+        width: 47%;
+        height: 100%;
+    }
+
+    .main-title-article-25 {
+        width: 49%;
+        height: 100%;
+    }
+
+    .text {
+        font-size: 1.6rem;
+    }
+
+    .content-warpper {
+        width: 100%;
+        height: 40%;
+        padding-top: 1.2vh;
+    }
+
+    .content-warpper {
+        border-top: rgb(225, 218, 218) solid thin;
+    }
+
+    .sub-title {
+        padding: 5vh 0vh;
+    }
+
+    .title {
+        margin-bottom: 4vh;
+    }
+
+    .title a {
+        text-decoration: none;
+        color: #ac9e56;
+        font-size: 2rem;
+    }
+
+    .most-popular-laureates {
+        width: 100%;
+        height: auto;
+        background-color: #fffefc;
+    }
+
+    .section-header-border-top {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 11vw;
+        margin-right: 11vw;
+        border-top: rgb(218, 213, 213) solid thin;
+    }
+
+    .acrticle-boder-lauter-top {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 3vh 0vh;
+        border-top: rgb(218, 213, 213) solid thin;
+    }
+
+    .content-img {
+        width: 45%;
+    }
+
+    .content-img img {
+        width: 100%;
+    }
+
+    .content-top {
+        width: 40%;
+    }
+
+    .item-name {
+        font-size: 1.8rem;
+        padding-bottom: 5vh;
+        font-weight: normal;
+    }
+
+    a.item-name-top {
+        text-decoration: none;
+        color: rgb(6, 127, 174);
+        font-size: 1.6rem;
+    }
+
+    .content-top:hover a.item-name-top {
+        color: #ac8314;
+    }
+
+    p.content-top-laureates {
+        padding: 5vh 0vh;
+        font-size: 1.6rem;
+    }
+
+    .article-grid-featured-content {
+        width: 100%;
+        background-color: #faf8f4;
+        padding-bottom: 12vw;
+    }
+
+    .featured-wrapper-content {
+        width: 78vw;
+        margin-left: 11vw;
+        margin-right: 11vw;
+        border-top: rgb(247, 240, 240) solid thin;
+    }
+
+    .featured-wrapper-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .article-one-third {
+        width: 32%;
+        height: 90vh;
+    }
+
+    .content-wrapper-top {
+        width: 100%;
+        height: 60%;
+        border-top: rgb(155, 153, 153) solid thin;
+    }
+
+    .featureimage {
+        width: 100%;
+        height: 45%;
+    }
+
+    .featureimage .image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .featureimage .image {
+        width: 100%;
+        height: 35vh;
+    }
+
+    header.content-wrapper-head {
+        padding: 3vh 0vh;
+    }
+
+    .content-wrapper-head p {
+        font-size: 2rem;
+        font-weight: normal;
+        color: #ac8314;
+    }
+
+    .sign-up-box {
+        background-color: lightgray;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2vw 6.4vw;
+    }
+
+    .text-mail {
+        width: 40%;
+        font-size: 1.6rem;
+    }
+
+    .email {
+        width: 45%;
+        font-size: 1.6rem;
+    }
+
+    .input-email {
+        width: 70%;
+        height: 5vh;
+        padding-left: 12px;
+    }
+
+    .email .submit {
+        width: 19%;
+        height: 5vh;
+        background-color: cornflowerblue;
+        color: #fff;
+        border: none;
+    }
+
+    .viewmore {
+        width: 78%;
+        height: 10vh;
+        margin-left: 11vw;
+        margin-right: 11vw;
+        /* background-color: aqua; */
+
+
+    }
+
+    .viewmore a {
+        text-decoration: none;
+        float: right;
+        font-size: 2rem;
+    }
+
+    .viewmore a:hover {
+        color: #ac8314;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div id="header">
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="ti-arrow-circle-up"></i></button>
+            <header class="header__logo">
+                <a href="index.html">
+                    <img src="img/Logo.jpg" alt="nobel-prizes" usemap="#nobel">
+                </a>
+            </header>
+            <div id="header__main-menu">
+                <ul id="header__main-menu-title">
+                    <li><a href="">Winners</a>
+                        <ul class="sub-menu">
+                            <li><a href="Physics.html">Physics Prize</a></li>
+                            <li><a href="Chemistry.html">Chemistry Prize</a></li>
+                            <li><a href="Medicine.html">Medicine Prize</a></li>
+                            <li><a href="Literature.html">Literature Prize</a></li>
+                            <li><a href="Peace.html">Peace Prize</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Team-Member.html">About Us</a></li>
+                    <li><a href="">Nomination</a>
+                        <ul class="sub-menu">
+                            <li><a href="Physics-Nomination.html">Physics Prize</a></li>
+                            <li><a href="Chemistry-Nomination.html">Chemistry Prize</a></li>
+                            <li><a href="Medicine-Nomination.html">Medicine Prize</a></li>
+                            <li><a href="Literature-Nomination.html">Literature Prize</a></li>
+                            <li><a href="Peace-Nomination.html">Peace Prize</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="News.html">News</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="img/peace.png" alt="">
+        </div>
+        <div id="container">
+            <div class="figcaption">
+                <p class="figcaption-caption">Who will be awarded the 2017 Nobel Peace Prize? Find out in 3 hours
+                    @NobelPrize- tell your friends!</p>
+                <p class="figcaption-attribution">&copy; Nobel Media .photo team 1</p>
+            </div>
+
+        </div>
+        <div class="nomination-intro">
+            <div class="namination-content">
+                <header class="sub-section-header">
+                    <h4>About the prize</h4>
+                </header>
+                <div class="sub-section-content">
+                    <p><em>“The said interest shall be divided into five equal parts, which shall be apportioned as
+                            follows: /- – -/ one part to the person who shall have done the most or the best work for
+                            fraternity between nations, the abolition or reduction of standing armies and for the
+                            holding and promotion of peace congresses.” (Excerpt from the will of Alfred Nobel)</em>
+                    </p>
+                    <p>Alfred Nobel showed a big interest in social issues and was engaged in the peace movement. His
+                        acquaintance with Bertha von Suttner, who was a driving force in the international peace
+                        movement in Europe and later awarded the Peace Prize, influenced his views on peace. Peace was
+                        the fifth and final prize area that Nobel mentioned in his will. The Nobel Peace Prize is
+                        awarded by a committee elected by the Norwegian Parliament (Stortinget)
+                    </p>
+
+                    <p>
+                        See all peace prize laureates or learn about the nomination process.
+                    </p>
+                </div>
+            </div>
+            <div class="quick-faclist">
+                <header class="sub-section-header">
+                    <h4>Quick facts</h4>
+                </header>
+                <ul class="nav-faclist">
+                    <li>Peace prizes: 103</li>
+                    <li>Peace laureates: 140</li>
+                    <li>Awarded women: 18</li>
+                    <li>Youngest laureate: 17</li>
+                    <li>Oldest laureate: 87</li>
+                </ul>
+
+            </div>
+            <div class="clear-nomination">
+
+            </div>
+        </div>
+        <div class="section-article-grid">
+            <header class="section-header-top">
+                <h3>2022 Nobel Peace Prize</h3>
+            </header>
+            <div class="section-wrapper-content">
+                <div class="section-wrapper-content-human">
+                    <div class="headline-h1">
+                        <a href="">The Nobel Prize 2022 </a>
+                    </div>
+                    <div class="content-human-h2">
+                        <p>The Nobel Peace Prize laureates represent civil society in their home countries. They have
+                            for many years promoted the right to criticise power and protect the fundamental rights of
+                            citizens. They have made an outstanding effort to document war crimes, human right abuses
+                            and the abuse of power. Together they demonstrate the significance of civil society for
+                            peace and democracy.</p>
+                    </div>
+                </div>
+                <div class="section-wrapper-img">
+                    <div class="feature-img">
+                        <img src="img/peace-carrier.png" alt="">
+
+                    </div>
+                    <div class="section-figcaption">
+                        <p class="figcaption-attribution">Ill. Niklas Elmehed © Nobel Prize Outreach</p>
+                    </div>
+                </div>
+                <div class="clear-section-content-human">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="section-article-grid">
+            <header class="section-header-top">
+                <h3>The 2022 peace laureates</h3>
+            </header>
+            <div class="section-wrapper-content">
+                <div class="section-wrapper-content-human">
+                    <div class="headline-h1">
+                        <a href=""> Ales Bialiatski</a>
+                    </div>
+                    <div class="content-human-h2">
+                        <p>They document war crimes, human rights abuses and the abuse of power.</p>
+                    </div>
+                    <div class="content-human-h2">
+                        <p>The 2022 Nobel Peace Prize is awarded to human rights advocate Ales Bialiatski from Belarus,
+                            the Russian human rights organisation Memorial and the Ukrainian human rights organisation
+                            Center for Civil Liberties.</p>
+                    </div>
+                    <div class="relate">
+                        <h3 class="relate-title">Related articles</h3>
+                    </div>
+                    <ul class="human-evolution">
+                        <li><a href="./Peace-News.html">Press release: The Nobel Peace Prize 2022</a></li>
+                        <li><a href="">Biobibliography</a></li>
+                        <li><a href="">Telephone interview with Ales Bialiatski</a></li>
+                    </ul>
+
+                </div>
+                <div class="section-wrapper-img">
+                    <div class="feature-img">
+                        <img src="img/Ales Bialiatski.png" alt="">
+
+                    </div>
+                    <div class="section-figcaption">
+                        <p class="figcaption-attribution">Nobel Peace Prize laureate Ales Bialiatski sentenced to 10
+                            years in prison</p>
+                    </div>
+
+                </div>
+                <div class="clear-section-content-human">
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="feature-content">
+        <div class="border-centent">
+            <header class="border-top">
+                <h3 class="section-header-h3">Nobel Prize nominations</h3>
+            </header>
+            <div class="article-one">
+                <div class="main-title-article-24">
+                    <div class="content-warpper">
+                        <header class="content">
+                            <div class="title">
+                                <h2 class="headline-h2">
+                                    <a href="">2023 Nobel Peace Prize nominations</a>
+                                </h2>
+                            </div>
+                        </header>
+                        <div class="text">
+                            The Norwegian Nobel Committee received 305 candidates for the 2023 Nobel Peace Prize. 93 of
+                            these are organisations.
+                            <a href="" target="_blank">Watch now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-title-article-25">
+                    <div class="feature-img">
+                        <a href="">
+                            <img src="img/The Norwegian Nobel.png" alt="">
+                        </a>
+                        <div class="section-figcaption">
+                            <p class="figcaption-attribution">Nobel Peace Prize award ceremony 2021 in the Oslo City
+                                Hall in Norway.</p>
+                            <span>© Nobel Prize Outreach. Photo: Geir Anders Rybakken Ørslien.</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="feature-content">
+        <div class="border-centent">
+            <!-- <header class="border-top">
+                <h3 class="section-header-h3">Nobel Prize nominations</h3>
+            </header> -->
+            <div class="article-one">
+                <div class="main-title-article-25">
+                    <div class="feature-img">
+                        <a href="">
+                            <img src="img/The nomination.png" alt="">
+                        </a>
+                        <div class="section-figcaption">
+                            <p class="figcaption-attribution">The nomination process for Nobel Peace Prize laureates.
+                            </p>
+                            <span>© Nobel Media. Ill. Niklas Elmehed.</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="main-title-article-24">
+                    <div class="content-warpper">
+                        <header class="content">
+                            <div class="title">
+                                <h2 class="headline-h2">
+                                    <a href="">Are the nominations made public?</a>
+                                </h2>
+                            </div>
+                        </header>
+                        <div class="text">
+                            Did you know that there is no public list of the current year’s nominees for the peace
+                            prize? The complete list of nominees of any year’s prizes is not disclosed for 50 years. The
+                            same goes for all the prize categories. Learn more about the nomination process in a this
+                            Q&A.
+                            <a href="" target="_blank">Watch now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="feature-content">
+        <div class="border-centent">
+            <header class="border-top">
+                <h3 class="section-header-h3">Questions and answers </h3>
+            </header>
+            <div class="article-one">
+                <div class="main-title-article-24">
+                    <div class="content-warpper">
+                        <header class="content">
+                            <div class="title">
+                                <h2 class="headline-h2">
+                                    <a href="">Can you award a Nobel Prize posthumously?</a>
+                                </h2>
+                            </div>
+                        </header>
+                        <div class="text">
+                            No, it is not possible to nominate someone for a posthumous Nobel Prize. Find out more in
+                            the FAQ.
+                            <a href="" target="_blank">Watch now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-title-article-25">
+                    <div class="feature-img">
+                        <a href="">
+                            <img src="img/Heléne Grynfarb.png" alt="">
+                        </a>
+                        <div class="section-figcaption">
+                            <p class="figcaption-attribution">© Nobel Media. Photo: Heléne Grynfarb</p>
+                            <!-- <span>© Nobel Prize Outreach. Photo: Geir Anders Rybakken Ørslien.</span> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="most-popular-laureates">
+        <div class="section-header-border-top">
+            <div class="acrticle-boder-lauter-top">
+                <div class="content-img">
+                    <img src="img/Martin Luther King Jr.png" alt="">
+                </div>
+                <div class="content-top">
+                    <h4 class="item-name">Martin Luther King Jr.</h4>
+                    <a href="" class="item-name-top">The Nobel Peace Prize 1964</a>
+                    <p class="content-top-laureates">"For his non-violent struggle for civil rights for the
+                        Afro-American population."</p>
+
+                </div>
+
+            </div>
+            <div class="acrticle-boder-lauter-top">
+                <div class="content-img">
+                    <img src="img/Malala Yousafzai.png" alt="">
+                </div>
+                <div class="content-top">
+                    <h4 class="item-name">Malala Yousafzai</h4>
+                    <a href="" class="item-name-top">The Nobel Peace Prize 2014</a>
+                    <p class="content-top-laureates">"For their struggle against the suppression of children and young
+                        people and for the right of all children to education."
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="section-header-border-top">
+            <div class="acrticle-boder-lauter-top">
+                <div class="content-img">
+                    <img src="img/Mother Teresa.png" alt="">
+                </div>
+                <div class="content-top">
+                    <h4 class="item-name">Mother Teresa</h4>
+                    <a href="" class="item-name-top">The Nobel Peace Prize 1979</a>
+                    <p class="content-top-laureates">"For her work for bringing help to suffering humanity."</p>
+
+                </div>
+
+            </div>
+            <div class="acrticle-boder-lauter-top">
+                <div class="content-img">
+                    <img src="img/Jane Addams1.png" alt="">
+                </div>
+                <div class="content-top">
+                    <h4 class="item-name">Jane Addams</h4>
+                    <a href="" class="item-name-top">The Nobel Peace Prize 1931</a>
+                    <p class="content-top-laureates">"For their assiduous effort to revive the ideal of peace and to
+                        rekindle the spirit of peace in their own nation and in the whole of mankind"
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="section-header-border-top">
+            <div class="acrticle-boder-lauter-top">
+                <div class="content-img">
+                    <img src="img/Nelson Rolihlahla Mandela.png" alt="">
+                </div>
+                <div class="content-top">
+                    <h4 class="item-name">Nelson Rolihlahla Mandela</h4>
+                    <a href="" class="item-name-top">The Nobel Peace Prize 1993</a>
+                    <p class="content-top-laureates">"For their work for the peaceful termination of the apartheid
+                        regime, and for laying the foundations for a new democratic South Africa."</p>
+
+                </div>
+
+            </div>
+            <div class="acrticle-boder-lauter-top">
+                <div class="content-img">
+                    <img src="img/Rigoberta Menchú Tum.png" alt="">
+                </div>
+                <div class="content-top">
+                    <h4 class="item-name">Rigoberta Menchú Tum</h4>
+                    <a href="" class="item-name-top">The Nobel Peace Prize 1992</a>
+                    <p class="content-top-laureates">"For her struggle for social justice and ethno-cultural
+                        reconciliation based on respect for the rights of indigenous peoples."
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="viewmore">
+            <a href="https://www.nobelprize.org/prizes/lists/all-nobel-peace-prizes/" target="_blank"> View more
+                >>
+            </a>
+        </div>
+    </div>
+    <div class="article-grid-featured-content">
+        <div class="featured-wrapper-content">
+            <div class="article-one-third">
+                <div class="content-wrapper-top">
+                    <header class="content-wrapper-head">
+                        <p>Interesting facts about the peace prize</p>
+                    </header>
+                    <div class="text">
+                        <p>An interview with Olav Njølstad, Director of the Norwegian Nobel Institute, about the Nobel
+                            Peace Prize.</p>
+                    </div>
+
+                </div>
+                <div class="featureimage">
+                    <div class="image">
+                        <img src="img/Director of the Norwegian.png" alt="">
+                    </div>
+                    <div class="figcaption">
+                        <p class="figcaption-caption">Nobel Peace Prize 2017 047Director of the Norwegian Nobel
+                            Institute and secretary of the Norwegian Nobel Committee Olav Njølstad
+                        </p>
+                        <p class="figcaption-attribution">© Nobel Media. Photo: Ken Opprann</p>
+                    </div>
+                </div>
+            </div>
+            <div class="article-one-third">
+                <div class="content-wrapper-top">
+                    <header class="content-wrapper-head">
+                        <p>A three-time awardee</p>
+                    </header>
+                    <div class="text">
+                        <p>The Red Cross has been awarded three times - read about the work of the organization.</p>
+                    </div>
+
+                </div>
+                <div class="featureimage">
+                    <div class="image">
+                        <img src="img/Armlet for the Red Cross.png" alt="">
+                    </div>
+                    <div class="figcaption">
+                        <p class="figcaption-caption">Armlet for the Red Cross.</p>
+                        <p class="figcaption-attribution">Photo: Nobel Prize Museum</p>
+                    </div>
+                </div>
+            </div>
+            <div class="article-one-third">
+                <div class="content-wrapper-top">
+                    <header class="content-wrapper-head">
+                        <p>Fighting for the rights of all children</p>
+                    </header>
+                    <div class="text">
+                        <p>See Malala Yousafzai’s Nobel lecture about the work done for children’s education.</p>
+                    </div>
+
+                </div>
+                <div class="featureimage">
+                    <div class="image">
+                        <img src="img/Malala_Yousafzai_Foto_Ken_Opprann-1-768x1024-1-768x656.png" alt="">
+                    </div>
+                    <div class="figcaption">
+                        <p class="figcaption-caption">Photo: Ken Opprann</p>
+                        <!-- <p class="figcaption-attribution">Photo: Alexander Mahmoud</p> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="sign-up-box">
+        <div class="text-mail">
+            <h3>Sign up to the "Monthly" newsletter</h3><br>
+            <p>Join thousands of global subscribers enjoying the free monthly Nobel Prize highlights, trivia
+                and up-to-date information.</p>
+        </div>
+        <div class="email">
+            <form onsubmit="return checkemail()">
+                <input type="text" id="email" placeholder="Input your email" class="input-email">
+                <input type="submit" value="Submit" class="submit"><br><br>
+            </form>
+            <input type="checkbox" name="xacnhan" id="xacnhan"> I consent to my email address being used in
+            accordance with the privacy policy.
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer">
+            <div class="social-list">
+                <a href="https://www.facebook.com/nobelprize/"><i class="ti-facebook"></i></a>
+                <a href="https://www.instagram.com/nobelprize_org/?hl=en"><i class="ti-instagram"></i></a>
+                <a href="https://www.youtube.com/thenobelprize"><i class="ti-youtube"></i></a>
+                <a href="https://twitter.com/NobelPrize"><i class="ti-twitter-alt"></i></a>
+                <a href="https://www.linkedin.com/company/nobelprize/"><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="copyright">Copyright &copy; by <a href="Team-Member.html">Team 1</a></p>
+        </div>
+    </footer>
+</body>
+<script>
+    function checkemail() {
+        var emailcheck = document.getElementById('email').value;
+        var reg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[A-Z]{2}|com|org|net|gov|mil|biz|info|mobi|name|aero|jobs|museum)\b/;
+        if (reg.test(emailcheck)) {
+            alert('Email ID is valid | Joining success');
+            return true;
+        }
+        else {
+            alert('Email ID is invalid ! please input again');
+            alert('follow the etg: abc123@mail.com');
+            return false;
+        }
+    }
+
+    // Get the button:
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+
+</html>
