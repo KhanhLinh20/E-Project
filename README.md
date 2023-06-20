@@ -3,7 +3,7 @@
 <br> Batch no.: T1.2302.E1
 <br> CENTER NAME: ACE-HCMC-2-FPT
 
-Author:
+3 collaborators:
 <br> Dinh Hoang Khanh Linh - Student23022004
 <br> Nguyen Quoc Hoang - Student1316202
 <br> Tran Bao Huy - Student1457510
